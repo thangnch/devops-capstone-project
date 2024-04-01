@@ -14,7 +14,7 @@
 [clone : clone] + test -z 
 [clone : clone] + test -z 
 [clone : clone] + git config --global --add safe.directory /workspace/output
-[clone : clone] + /ko-app/git-init '-url=https://github.com/elmokhking/devops-capstone-project.git' '-revision=cd-pipeline' '-refspec=' '-path=/workspace/output/' '-sslVerify=true' '-submodules=true' '-depth=1' '-sparseCheckoutDirectories='
+[clone : clone] + /ko-app/git-init '-url=https://github.com/thangnch/devops-capstone-project.git' '-revision=cd-pipeline' '-refspec=' '-path=/workspace/output/' '-sslVerify=true' '-submodules=true' '-depth=1' '-sparseCheckoutDirectories='
 [clone : clone] {"level":"info","ts":1711863617.36852,"caller":"git/git.go:176","msg":"Successfully cloned https://github.com/elmokhking/devops-capstone-project.git @ 092644378e9c17ef8d65d3932c5d11163c55bd6e (grafted, HEAD, origin/cd-pipeline) in path /workspace/output/"}
 [clone : clone] {"level":"info","ts":1711863617.43917,"caller":"git/git.go:215","msg":"Successfully initialized and updated submodules in path /workspace/output/"}
 [clone : clone] + cd /workspace/output/
@@ -26,7 +26,7 @@
 [clone : clone] + RESULT_COMMITTER_DATE=1711863526
 [clone : clone] + printf '%s' 1711863526
 [clone : clone] + printf '%s' 092644378e9c17ef8d65d3932c5d11163c55bd6e
-[clone : clone] + printf '%s' https://github.com/elmokhking/devops-capstone-project.git
+[clone : clone] + printf '%s' https://github.com/thangnch/devops-capstone-project.git
 
 [lint : flake8] Collecting Werkzeug==2.1.2
 [lint : flake8]   Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
@@ -428,9 +428,9 @@
 [build : build-and-push] STEP 7/9: USER theia
 [build : build-and-push] STEP 8/9: EXPOSE 8080
 [build : build-and-push] STEP 9/9: CMD ["gunicorn","--bind=0.0.0.0:8080","--log-level=info","service:app"]
-[build : build-and-push] COMMIT image-registry.openshift-image-registry.svc:5000/sn-labs-elnourhira/accounts:1
+[build : build-and-push] COMMIT image-registry.openshift-image-registry.svc:5000/sn-labs-thangnch2210/accounts:1
 [build : build-and-push] --> 9158bb44091
-[build : build-and-push] Successfully tagged image-registry.openshift-image-registry.svc:5000/sn-labs-elnourhira/accounts:1
+[build : build-and-push] Successfully tagged image-registry.openshift-image-registry.svc:5000/sn-labs-thangnch2210/accounts:1
 [build : build-and-push] 9158bb44091c8f1fd5033b2bd57bae7617668a64722b02a245a6f27a019e7176
 [build : build-and-push] Getting image source signatures
 [build : build-and-push] Copying blob sha256:3f4b373795661b9adedff84eacd615036a794eeb94bf66167d4b802cd075e27f
@@ -442,7 +442,7 @@
 [build : build-and-push] Copying config sha256:9158bb44091c8f1fd5033b2bd57bae7617668a64722b02a245a6f27a019e7176
 [build : build-and-push] Writing manifest to image destination
 [build : build-and-push] Storing signatures
-[build : build-and-push] sha256:ee20652a143eaface1a4bc115db483fcfff0e44accdfd047fcff6f4b137ceac9image-registry.openshift-image-registry.svc:5000/sn-labs-elnourhira/accounts:1
+[build : build-and-push] sha256:ee20652a143eaface1a4bc115db483fcfff0e44accdfd047fcff6f4b137ceac9image-registry.openshift-image-registry.svc:5000/sn-labs-thangnch2210/accounts:1
 
 [deploy : oc] Updating manifest...
 [deploy : oc] apiVersion: apps/v1
